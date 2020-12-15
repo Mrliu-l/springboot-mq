@@ -1,4 +1,4 @@
-package com.self.mq.rabbitmqproducer.service;
+package com.self.mq.producer.rabbitmq.service;
 
 import com.self.mq.rabbitmqproducer.config.DirectRabbitMqConfig;
 import com.self.mq.rabbitmqproducer.config.FanoutRabbitMqConfig;

@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rabbitmq-producer" />
-        <module name="springboot-mq" />
+        <module name="consumer" />
+        <module name="producer" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+    <bytecodeTargetLevel>
+      <module name="customer" target="1.8" />
+      <module name="rabbitmq-producer" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.self.mq.rabbitmqproducer.config;
+package com.self.mq.producer.rabbitmq.config;
 
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.context.annotation.Bean;

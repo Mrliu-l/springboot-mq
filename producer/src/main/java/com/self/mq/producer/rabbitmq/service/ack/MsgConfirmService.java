@@ -1,4 +1,4 @@
-package com.self.mq.rabbitmqproducer.service.ack;
+package com.self.mq.producer.rabbitmq.service.ack;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.ReturnedMessage;
