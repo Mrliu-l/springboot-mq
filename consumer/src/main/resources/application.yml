@@ -1,0 +1,14 @@
+server:
+  port: 81
+spring:
+  rabbitmq:
+    host: 39.106.19.2
+    port: 5672
+    username: guest
+    password: guest
+    #开启发送ack
+    publisher-confirm-type: correlated
+    #开启发送失败回退
+    publisher-returns: true
+swagger:
+  exclude-path: /ops/**, /error

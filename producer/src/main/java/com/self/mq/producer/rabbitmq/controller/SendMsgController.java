@@ -19,19 +19,7 @@ public class SendMsgController {
 
     @ApiOperation(value = "发送direct消息", produces = "application/json")
     @PostMapping("sendDirectMsg")
-    public String sendDirectMsg(@RequestParam String key, @RequestParam String msg){
-        return sendMsgService.sendDirectMsg(key, msg);
-    }
-
-    @ApiOperation(value = "发送topic消息", produces = "application/json")
-    @PostMapping("sendTopicMsg")
-    public String sendTopicMsg(@RequestParam String key, @RequestParam String msg){
-        return sendMsgService.sendTopicMsg(key, msg);
-    }
-
-    @ApiOperation(value = "发送topic消息", produces = "application/json")
-    @PostMapping("sendFanoutMsg")
-    public String sendFanoutMsg(@RequestParam String msg){
-        return sendMsgService.sendFanoutMsg(msg);
+    public String sendDirectMsg(@RequestParam String exchange, @RequestParam String key, @RequestParam String msg){
+        return sendMsgService.sendDirectMsg(exchange, key, msg);
     }
 }
