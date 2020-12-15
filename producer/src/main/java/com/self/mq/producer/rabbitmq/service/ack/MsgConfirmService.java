@@ -27,7 +27,7 @@ public class MsgConfirmService implements ConfirmCallback, ReturnsCallback {
     }
 
     /**
-     *  ConfirmCallback只确认消息是否到达exchange，已实现方法confirm中ack属性为标准，true到达
+     *  ConfirmCallback只确认消息是否到达exchange，以实现方法confirm中ack属性为标准，true到达
      *  config : 需要开启rabbitmq得ack    publisher-confirm-type
      */
     @Override
