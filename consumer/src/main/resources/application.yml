@@ -6,9 +6,10 @@ spring:
     port: 5672
     username: guest
     password: guest
-    #开启发送ack
-    publisher-confirm-type: correlated
-    #开启发送失败回退
-    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: manual #消费者手动确认消息
+        prefetch: 1 #限制每次接收一条消息
+
 swagger:
   exclude-path: /ops/**, /error

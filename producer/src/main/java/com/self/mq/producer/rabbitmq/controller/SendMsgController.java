@@ -20,6 +20,6 @@ public class SendMsgController {
     @ApiOperation(value = "发送direct消息", produces = "application/json")
     @PostMapping("sendDirectMsg")
     public String sendDirectMsg(@RequestParam String exchange, @RequestParam String key, @RequestParam String msg){
-        return sendMsgService.sendDirectMsg(exchange, key, msg);
+        return sendMsgService.sendMsg(exchange, key, msg);
     }
 }

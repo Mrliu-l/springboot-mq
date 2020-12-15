@@ -10,8 +10,6 @@ public class DirectRabbitMqConfig {
 
     //绑定键
     public final static String javaQueue = "directJavaQueue";
-    public final static String pythonQueue = "directPythonQueue";
-    public final static String rubyQueue = "directRubyQueue";
     //topicExchange
     public final static String exchange = "directExchange";
     /**
